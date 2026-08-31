@@ -16,20 +16,26 @@
 
         <header class="video-header">
             <p class="eyebrow">Animation 02</p>
-            <h1>Video 2</h1>
+            <h1>Segmentierung mit Cellpose-SAM</h1>
             <p class="video-description">
-                Hier kannst du eine kurze Beschreibung deiner zweiten Animation
-                eintragen.
+                Du wolltest wissen, wie eine Segmentierung mit Cellppose-SAM aussieht und wie gut das Modell ist? 
+                Das erste Bild ist das Input-Bild der Wundheilzeitreihe.
+            </p>
+            <p class="video-description">
+                Das erste Bild ist das Input-Bild der Wundheilzeitreihe. 
+                Dann siehst du die Outlines der Zellen, die Cellpose erkannt hat 
+                und als Nächsten ein buntes Bild, in dem jede erkannte Zelle mit einer zufälligen Farbe eingefärbt wurde.
+                Zuletzt ein regenbogenartiges Bild. Hier sieht man die sogenannten "Cell Poses", die dem Programm seinen Namen geben.
+                Die Cell Poses sind das, was der Computer sieht und woran er entscheidet, wie er Zellen voneinander segmentieren soll.
             </p>
         </header>
 
         <div class="video-wrapper">
-            <img
-                src="../videos/video2.gif"
-                alt="Animation"
-            >            
-            Dein Browser unterstützt die Videowiedergabe leider nicht.
-        </div>    
+            <video controls playsinline preload="metadata">
+                <source src="../videos/video2.mp4" type="video/mp4">
+                Dein Browser unterstützt die Videowiedergabe leider nicht.
+            </video>
+        </div> 
 
         <div class="video-actions">
             <a class="button" href="../index.html">← Zurück</a>
