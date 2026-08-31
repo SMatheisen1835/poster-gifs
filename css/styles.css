@@ -315,6 +315,12 @@ a {
         border-radius: 14px;
     }
 
+   .video-wrapper img {
+      display: block;
+       width: 100%;
+       height: auto;
+   }
+
     .video-wrapper video {
         max-height: none;
     }
