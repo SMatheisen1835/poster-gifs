@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poster Animation</title>
-
-    <style>
-        html,
-        body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            background: black;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        video {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+    <meta name="description" content="Eine Sammlung von vier kurzen Animationen und Videos.">
+    <title>Meine Videos</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <main class="landing-page">
+        <section class="hero">
+            <p class="eyebrow">Video Collection</p>
+            <h1>Entdecke die Animationen</h1>
+            <p class="intro">
+                Wähle eines der vier Videos aus, um die Animation anzusehen.
+            </p>
+        </section>
 
-    <video autoplay muted loop playsinline controls>
-        <source src="animation1.mp4" type="video/mp4">
-        Dein Browser unterstützt kein HTML5-Video.
-    </video>
+        <section class="video-grid" aria-label="Videos">
+            <a class="video-card" href="templates/video1.html">
+                <span class="video-number">01</span>
+                <span class="video-card-content">
+                    <span class="video-card-title">Video 1</span>
+                    <span class="video-card-description">Kurze Beschreibung der ersten Animation</span>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
 
+            <a class="video-card" href="templates/video2.html">
+                <span class="video-number">02</span>
+                <span class="video-card-content">
+                    <span class="video-card-title">Video 2</span>
+                    <span class="video-card-description">Kurze Beschreibung der zweiten Animation</span>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="video-card" href="templates/video3.html">
+                <span class="video-number">03</span>
+                <span class="video-card-content">
+                    <span class="video-card-title">Video 3</span>
+                    <span class="video-card-description">Kurze Beschreibung der dritten Animation</span>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="video-card" href="templates/video4.html">
+                <span class="video-number">04</span>
+                <span class="video-card-content">
+                    <span class="video-card-title">Video 4</span>
+                    <span class="video-card-description">Kurze Beschreibung der vierten Animation</span>
+                </span>
+                <span class="arrow" aria-hidden="true">→</span>
+            </a>
+        </section>
+
+        <footer class="site-footer">
+            <p>© <span id="year"></span> Meine Videos</p>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
