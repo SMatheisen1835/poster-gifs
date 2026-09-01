@@ -211,16 +211,17 @@ a {
 .video-wrapper {
     overflow: hidden;
     background: #111;
-    border-radius: var(--radius);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
 }
 
+.video-wrapper img,
 .video-wrapper video {
     display: block;
     width: 100%;
     height: auto;
     max-height: 75vh;
-    background: #111;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .video-actions {
@@ -315,16 +316,15 @@ a {
         border-radius: 14px;
     }
 
-   .video-wrapper img {
-      display: block;
-       width: 100%;
-       height: auto;
-   }
-
+    .video-wrapper img,
     .video-wrapper video {
-        max-height: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 75vh;
+        object-fit: contain;
+        margin: 0 auto;
     }
-}
 
 /* Reduzierte Animationen für Nutzer, die das bevorzugen */
 @media (prefers-reduced-motion: reduce) {
