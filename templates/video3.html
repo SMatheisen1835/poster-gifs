@@ -40,18 +40,58 @@
             </video>
         </div>
 	
-	<header class="video-header">
+	    <header class="video-header">
+            <p class="video-card-title">Dichtegradienten</p>
             <p class="video-description">
-                Veränderung der Dichtegradienten über einen Zeitraum von 36 Stunden.
+                Anschließend wird aus der Zelldichte für jede Kachel ein lokaler Dichtegradient bestimmt. Dieser beschreibt Richtung und Stärke der räumlichen Dichteveränderung. 
             </p>
+            <p class="video-description">
+                Ein Dichtegradient stellt dabei ein räumliches Ungleichgewicht dar. Da biologische Systeme auf solche Unterschiede reagieren und diese tendenziell ausgleichen können, liefert der Gradient eine wahrscheinlichste Richtung. 
+            </p>
+
         </header>
 
         <div class="video-wrapper">
-	    <video autoplay muted loop controls playsinline preload="metadata">
-                <source src="../videos/video3.mp4" type="video/mp4">
-                Dein Browser unterstützt die Videowiedergabe leider nicht.
-            </video>
-        </div>
+            <img src="../videos/density_gradients.gif" alt="Animation">          
+        </div>   
+
+        <header class="video-header">
+            <p class="video-card-title">Frame-to-Frame-Analyse</p>
+            <p class="video-description">
+                Im nächsten Schritt wird betrachtet, wie sich die Zellverteilung tatsächlich zwischen aufeinanderfolgenden Frames verändert.             
+            </p>
+        </header>
+        
+        <div class="video-wrapper">
+            <img src="../videos/density_changes.gif" alt="Animation">          
+        </div>   
+
+        <header class="video-header">
+            <p class="video-card-title">Migrations- und Proliferations-Hotspots</p>
+            <p class="video-description">
+                Abschließend werden Dichtegradient und tatsächliche zeitliche Veränderung miteinander kombiniert.    
+            </p>
+            <p class="video-description">
+                Dazu wird jede Kachel mit ihren direkt angrenzenden Nachbarkacheln verglichen. So wird zunächst bestimmt, in welche Richtung der größte Dichteunterschied besteht. Anschließend wird geprüft, ob sich die Zellverteilung zwischen den Frames tatsächlich in diese Richtung verändert. 
+            </p>
+            <p class="video-description">
+                Stimmen beide Informationen überein, kann dies auf ein Bewegungsmuster und damit einen möglichen Migrations-Hotspot hinweisen. 
+            </p>
+            <p class="video-description">
+                Nimmt die Zelldichte dagegen lokal zu, ohne dass eine entsprechende Verschiebung in den Nachbarkacheln erkennbar ist, spricht dies eher für einen Proliferations-Hotspot. 
+            </p>
+        </header>
+        
+        <header class="video-header">
+            <p class="video-card-title">Rückprojektion</p>
+            <p class="video-description">
+                Die ermittelten Hotspot-Koordinaten werden anschließend auf das ursprüngliche Bildmaterial zurückprojiziert. Dadurch können die berechneten Bereiche direkt im Bild betrachtet und über die Zeit verfolgt werden.            
+            </p>
+        </header>     
+
+        <div class="video-wrapper">
+            <img src="../videos/Migrationshotspots.gif" alt="Animation">          
+        </div>   
 
         <div class="video-actions">
             <a class="button" href="../index.html">← Zurück</a>
