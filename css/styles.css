@@ -384,7 +384,7 @@ a {
 
 .detail-button-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     margin-top: 28px;
 }
@@ -402,7 +402,7 @@ a {
     background: transparent;
     color: var(--text);
 
-    border: 1px solid var(--border);
+    border: 2px solid #c8c8c2;
     border-radius: 14px;
 
     text-decoration: none;
@@ -450,7 +450,7 @@ a {
     flex-shrink: 0;
     margin-left: 16px;
 
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     border-radius: 50%;
 
     font-size: 1.1rem;
