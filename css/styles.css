@@ -327,7 +327,11 @@ a {
     }
 }
 
-/* Reduzierte Animationen für Nutzer, die das bevorzugen */
+
+/* =================================
+   Reduzierte Animationen
+   ================================= */
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -362,7 +366,9 @@ a {
     border: 0;
 }
 
-/* Smartphone */
+
+/* Poster auf Smartphones */
+
 @media (max-width: 650px) {
     .poster-wrapper {
         height: 70vh;
@@ -401,15 +407,18 @@ a {
 
     text-decoration: none;
 
-    transition: background 0.18s ease,
-                border-color 0.18s ease,
-                transform 0.18s ease;
+    transition:
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease;
 }
 
-.detail-button:hover {
+.detail-button:hover,
+.detail-button:focus-visible {
     background: var(--surface);
     border-color: #bdbdb7;
     transform: translateY(-2px);
+    outline: none;
 }
 
 .detail-button-content {
@@ -446,9 +455,10 @@ a {
 
     font-size: 1.1rem;
 
-    transition: transform 0.18s ease;
+    transition: transform 180ms ease;
 }
 
-.detail-button:hover .detail-button-arrow {
+.detail-button:hover .detail-button-arrow,
+.detail-button:focus-visible .detail-button-arrow {
     transform: translateX(4px);
 }
