@@ -369,3 +369,81 @@ a {
         border-radius: 14px;
     }
 }
+
+
+/* ================================
+   Detail-Button
+   ================================ */
+
+.detail-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;
+    margin: 28px auto 0;
+    padding: 16px 20px;
+
+    background: transparent;
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease;
+}
+
+.detail-button:hover,
+.detail-button:focus-visible {
+    background: var(--surface);
+    border-color: #bdbdb7;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.detail-button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.detail-button-title {
+    font-weight: 600;
+}
+
+.detail-button-subtitle {
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 400;
+}
+
+.detail-button-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    font-size: 1.1rem;
+
+    transition: transform 180ms ease;
+}
+
+.detail-button:hover .detail-button-arrow,
+.detail-button:focus-visible .detail-button-arrow {
+    transform: translateX(4px);
+}
+
