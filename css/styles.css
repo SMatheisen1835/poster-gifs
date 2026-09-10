@@ -325,6 +325,7 @@ a {
         object-fit: contain;
         margin: 0 auto;
     }
+}
 
 /* Reduzierte Animationen für Nutzer, die das bevorzugen */
 @media (prefers-reduced-motion: reduce) {
