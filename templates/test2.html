@@ -16,24 +16,43 @@
 	
 	    <header class="video-header">
             <h1>Details zur Analyse der Zellverteilung</h1>
+	    <p class="video-description">
+	    	 In diesem Abschnitt wird gezeigt, wie aus Dichteverteilungen im Zeitlichen Verlauf Hotspotregionen detektiert werden können. 
+	    </p>
             <p class="video-card-title">Dichtegradienten</p>
             <p class="video-description">
-                Anschließend wird aus der Zelldichte für jede Kachel ein lokaler Dichtegradient bestimmt. Dieser beschreibt Richtung und Stärke der räumlichen Dichteveränderung. 
+                Aus der zuvor bestimmten Zelldichte wird für jede Kachel der lokale Dichtegradient berechnet. Dieser beschreibt, in welche Richtung und wie stark sich die Zelldichte im unmittelbaren Umfeld verändert. 
             </p>
             <p class="video-description">
-                Ein Dichtegradient stellt dabei ein räumliches Ungleichgewicht dar. Da biologische Systeme auf solche Unterschiede reagieren und diese tendenziell ausgleichen können, liefert der Gradient eine wahrscheinlichste Richtung. 
+                Der Gradient macht damit zunächst ein räumliches Ungleichgewicht der Zelldichten sichtbar. Unter der Annahme, dass Zellen bestrebt sind, lokale Dichteunterschiede auszugleichen, kann aus diesem Ungleichgewicht eine bevorzugte bzw. wahrscheinlichste Richtung eines möglichen Dichteausgleichs abgeleitet werden. 
+            </p>
+            <p class="video-description">
+            Die Richtung des Gradienten gibt dabei die Richtung dieses möglichen Ausgleichs an, während seine Stärke beschreibt, wie ausgeprägt das zugrunde liegende Dichtegefälle ist. 
             </p>
 
         </header>
 
         <div class="video-wrapper">
             <img src="../videos/density_gradients.gif" alt="Animation">          
-        </div>   
+        </div>  
+ 
+            <p class="video-description">
+            Die folgende Darstellung zeigt die berechneten Dichtegradienten für die einzelnen Kacheln. Die Richtung der Pfeile gibt die bevorzugte Richtung eines möglichen Dichteausgleichs an. Die Länge der Pfeile beschreibt die Stärke des zugrunde liegenden Dichtegradienten. 
+            </p>
+            <p class="video-description">
+            Damit wird sichtbar, wo innerhalb des Bildes Dichteungleichgewichte vorliegen und in welche Richtung ein möglicher Ausgleich erfolgen könnte. 
+            </p>
 
         <header class="video-header">
             <p class="video-card-title">Frame-to-Frame-Analyse</p>
             <p class="video-description">
-                Im nächsten Schritt wird betrachtet, wie sich die Zellverteilung tatsächlich zwischen aufeinanderfolgenden Frames verändert.             
+                Im nächsten Schritt wird untersucht, wie sich die Zelldichte tatsächlich zwischen aufeinanderfolgenden Frames verändert.
+            </p>
+	    <p class="video-description">
+                Für jede Kachel wird die Veränderung der lokalen Zelldichte gegenüber dem vorherigen Frame bestimmt. Eine positive Veränderung (rot) beschreibt eine Zunahme der Zelldichte, während eine negative Veränderung (blau) eine Abnahme der Zelldichte beschreibt. 
+            </p>
+	    <p class="video-description">
+                Die farbliche Darstellung zeigt dabei die Stärke und Richtung dieser zeitlichen Veränderung. 
             </p>
         </header>
         
@@ -67,6 +86,13 @@
         <div class="video-wrapper">
             <img src="../videos/Migrationshotspots.gif" alt="Animation">          
         </div>   
+
+	<header class="video-header">
+            <p class="video-card-title">Aktueller Stand</p>
+            <p class="video-description">
+                Da die Auswertung noch nicht vollständig abgeschlossen ist, funktioniert das Tracking derzeit nur eingeschränkt. Die Darstellung zeigt daher zunächst den methodischen Ansatz. Das Potential ist gegeben doch die Gewichtung muss noch auf einen kuratierten Datensatz angepasst werden. 
+            </p>
+        </header>     
 
         <div class="video-actions">
             <a class="button" href="test1.html">← Zurück</a>

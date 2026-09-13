@@ -17,18 +17,24 @@
         <header class="video-header">
             <h1>Analyse der Zellverteilung</h1>
             <p class="video-description">
-                Unter diesem Abschnitt wird gezeigt, wie Proliferations- und Migrations-Hotspots anhand der räumlichen und zeitlichen Veränderung der Zellverteilung identifiziert wurden. 
+		Aus den gefilterten und segmentierten Bilddaten werden durch eine einfache Häufigkeitsanalyse zunächst räumliche Muster der Zellverteilung gewonnen. Diese bilden die Grundlage für die weiteren Analyseschritte. 
             </p>
             <p class="video-card-title">Ausgangsparameter</p>
             <p class="video-description">
-                 Für die Analyse wurde das Bild in 128 × 128 Pixel große Kacheln unterteilt. Für jede Kachel wurde die Anzahl der segmentierten Partikel bestimmt. 
+                 Für die dargestellte Analyse wurde das Bild in 128 × 128 Pixel große Kacheln unterteilt. Für jede Kachel wird die Anzahl der darin erkannten und segmentierten Partikel bestimmt. 
             </p>
             <p class="video-description">
                  Die morphologischen Filter wurden dabei geöffnet, sodass alle segmentierten Partikel in die Häufigkeitsbestimmung eingingen. 
             </p>
             <p class="video-card-title">Häufigkeitsverteilung</p>
             <p class="video-description">
-                Zunächst wird die räumliche Verteilung der Zellen betrachtet. Die Höhe der 3D-Oberfläche entspricht dabei der Anzahl der Segmente und damit der Zelldichte im jeweiligen Bereich. 
+                Zunächst wird die räumliche Verteilung der segmentierten Zellen untersucht. Hierfür werden die einzelnen Kacheln als dreidimensionale Oberfläche dargestellt. 
+            </p>
+	    <p class="video-description">
+                Die Höhe der jeweiligen Peaks entspricht der Anzahl der erkannten Segmente und beschreibt damit die lokale Zelldichte. Hohe Bereiche kennzeichnen somit eine höhere, niedrige Bereiche eine geringere Zelldichte. 
+            </p>
+	    <p class="video-description">
+                Im folgenden Video wird die vollständige Zeitreihe mit insgesamt 36 Frames dargestellt. Dadurch lässt sich nachvollziehen, wie sich die räumliche Verteilung der Zellen während dem Untersuchungszeitraum verändert und wie der Scratch sich schließt. 
             </p>
         </header>
 
@@ -38,17 +44,23 @@
                 Dein Browser unterstützt die Videowiedergabe leider nicht.
             </video>
         </div>
+
+
+	    <p class="video-description">
+                Aus den räumlichen Mustern der Zellverteilung lassen sich weitere Informationen über die räumliche und zeitliche Dynamik der Zellen ableiten.  
+            </p>
+
 	
 	<div class="detail-button-wrapper">
 
 	    <a href="test2.html" class="detail-button">
         	<span class="detail-button-content">
 	            <span class="detail-button-title">
-        	        Mehr über diese Animation
+        	        Klicke hier
             	</span>
 
 	            <span class="detail-button-subtitle">
-        	        Hintergrundinformationen &amp; Details
+        	        um zu sehen wie die Identifikation von möglichen Migrations- und Proliferations-Hotspots 
             	</span>
         	</span>
 
